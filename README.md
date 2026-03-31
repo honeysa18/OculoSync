@@ -28,6 +28,8 @@ A 1D-CNN time-series model that ingests continuous ocular metrics. It calculates
 
 $$L_{visual}(t) = \int_{0}^{t} \left( \alpha \cdot \Delta P(t) + \beta \cdot f_{blink}(t)^{-1} + \gamma \cdot \sigma_{saccade}(t) \right) dt$$
 
+$$\Delta P(t)$$ $$f_{blink}(t)$$
+
 *(Where \Delta P(t) is pupillary fluctuation, f_{blink}(t) is full-blink frequency, and $$\sigma_{saccade}$$ is saccadic jitter. Constants are tuned via Module 0).*
 
 ### **Module 3: Micro-Saccadic Tremor (MST) Detection**
